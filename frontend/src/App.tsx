@@ -3,10 +3,10 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import Onboarding from "./pages/Onboarding";
 import Login from "./pages/Login";
-import Map from "./pages/Map";
 import LocationDetail from "./pages/LocationDetail";
 import HistoricalTrends from "./pages/HistoricalTrends";
 import CommutePlanner from "./pages/CommutePlanner";
+import Map2 from "./pages/Map2";
 // import "@fontsource/roboto/300.css";
 // import "@fontsource/roboto/400.css";
 // import "@fontsource/roboto/500.css";
@@ -42,7 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Onboarding />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/map" element={<Map />} />
+          <Route path="/map" element={<Map2 />} />
           <Route path="/location/:id" element={<LocationDetail />} />
           <Route path="/history" element={<HistoricalTrends />} />
           <Route path="/commute" element={<CommutePlanner />} />

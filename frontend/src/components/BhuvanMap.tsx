@@ -61,6 +61,7 @@ const BhuvanMap = ({
         minZoom: 4,
         maxZoom: 20,
       }),
+      controls: [], // Remove all default controls
     });
 
     mapInstanceRef.current = map;
@@ -80,12 +81,6 @@ const BhuvanMap = ({
       sx={{
         width: "100%",
         height: "100%",
-        "& .ol-zoom": {
-          top: "auto",
-          bottom: "2rem",
-          right: "2rem",
-          left: "auto",
-        },
         ...style,
       }}
     />
